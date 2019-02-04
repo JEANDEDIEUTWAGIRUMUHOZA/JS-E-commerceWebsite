@@ -1,0 +1,123 @@
+{
+ "OSMKey" : "CQGygA55zVK3GmfQJPpz",
+ "css": [
+    "/libraries/w3c/w3.css",
+    "/libraries/font-awesome/font-awesome.min.css",
+    "/css/global.css"
+ ],
+ "scripts" : [
+     "/libraries/jquery/jquery-3.3.1.min.js",
+     "/libraries/w3c/w3.js",
+     "/modules/menu/js/menu.js"
+ ],
+ "pages" : [
+     {
+       "name" : "users.html",
+       "scripts" : [
+                    "js/users.js",
+                    "js/init.js",
+                    "js/test.js"
+                  ],
+       "css": ["css/forms.css", "css/users.css"]
+
+     },
+     {
+       "name": "profile.html",
+       "scripts": [
+                    "https://cdn.klokantech.com/osmnames/v1/autocomplete.js",
+                    "js/geoloc-osm-input.js"
+                  ],
+       "css": [
+          "https://cdn.klokantech.com/osmnames/v1/autocomplete.css",
+          "css/profile.css",
+          "css/forms.css"
+       ]
+     },
+     {
+       "name": "products.html",
+       "scripts": ["js/products.js"],
+       "css":["css/products.css"]
+     }
+  ],
+  "components": [
+    {
+      "src": "/modules/slideshow/slideshow.html",
+      "target": "#header",
+      "scripts" : ["/modules/slideshow/js/slideshow.js"],
+      "css"  : ["/modules/slideshow/css/slideshow.css"]
+    }
+  ],
+
+ "menu" : [
+   { "Boutique" : "/modules/products/products.html"},
+   { "Nos Fans" : "/modules/users/users.html" }
+  ],
+ "products" : [
+    {
+      "id": 1,
+      "name":"Notre album",
+      "price": 20,
+      "text": "Notre nouvel album est un voyage au coeur de ce qui fait de nous ...",
+      "image": "/modules/products/images/album.jpg"
+
+    },
+    {
+      "id": 2,
+      "name":"T-shirt",
+      "price": 25,
+      "text": "Soutenez-nous et faites-nous connaître ",
+      "image": "/modules/products/images/tshirt.jpg"
+
+    },
+    {
+      "id": 3,
+      "name":"Autocollant",
+      "price": 5,
+      "text": "Notre engagement",
+      "image": "/modules/products/images/autcollant.jpg"
+    }
+  ],
+  "users" : [
+    {
+      "id": 1,
+      "name":"Galinette",
+      "forname":"Arthur",
+      "age":"32",
+      "city":"Grenoble",
+      "postalcode":"38000"
+    },
+    {
+      "id": 2,
+      "name":"Boubounette",
+      "forname":"Mimie",
+      "age":"14",
+      "city":"Valence",
+      "postalcode":"26000"
+    },
+    {
+      "id": 3,
+      "name":"Lanterne",
+      "forname":"Céline",
+      "age":"24",
+      "city":"Crest",
+      "postalcode":"26300"
+    },
+    {
+      "id": 4,
+      "name":"Rougeon",
+      "forname":"Antoine",
+      "age":"52",
+      "city":"Angers",
+      "postalcode":"49000"
+    }
+    ,
+    {
+      "id": 5,
+      "name":"Monon",
+      "forname":"Romain",
+      "age":"12",
+      "city":"Paris",
+      "postalcode":"75011"
+    }
+  ]
+}

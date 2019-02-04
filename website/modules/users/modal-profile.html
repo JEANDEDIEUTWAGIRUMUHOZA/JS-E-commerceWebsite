@@ -1,0 +1,31 @@
+<div id="modal-profile-form" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center"><br>
+        <span class="w3-button w3-xlarge w3-hover-red w3-display-topright close" title="Close Modal">&times;</span>
+        <img src="img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form id="user-profile-form" class="w3-container" action="">
+        <div class="w3-section" w3-repeat="user">
+          <label><b>Nom</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="{{name}}" name="name" value="{{name}}" >
+          <label><b>Prénom</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="{{forname}}" name="forname" value="{{forname}}">
+          <label><b>Age</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="{{age}}" name="age" value="{{age}}">
+          <label><b>Ville</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="{{city}}" name="city" value="{{city}}">
+          <label><b>CP</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="{{postalcode}}" name="postalcode" value="{{postalcode}}">
+          <input type="hidden" name="userId" value="{{id}}">
+          <input  type="submit" class="w3-button w3-green"></input>
+          <button type="button" class="w3-button w3-red close">Cancel</button>
+        </div>
+      </form>
+
+
+
+
+    </div>
+</div>

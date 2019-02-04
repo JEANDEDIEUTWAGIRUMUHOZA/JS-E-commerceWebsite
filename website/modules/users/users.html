@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nos Fans</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="/js/global.js"></script>
+  <script src="/js/init.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Website</h1>
+  <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_make_a_website_footer  -->
+  <p>A website created by me.</p>
+</div>
+
+<div class="navbar" id="menu">
+</div>
+
+<div id="modal-login-form-container">
+<!-- <div w3:includeHTML="/modules/forms/login.html"></div> -->
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3>More Text</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <div class="fakeimg" style="height:60px;">Image</div><br>
+      <div class="fakeimg" style="height:60px;">Image</div><br>
+      <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+      <h2>ILS NOUS AIMENT ET NOUS AUSSI</h2>
+      <h5>Liste des inscrits à la liste des fans</h5>
+      <table id="userslist">
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Age</th>
+          <th>Ville</th>
+          <th>CP</th>
+        </tr>
+        <tr w3-repeat="users">
+          <td>{{name}}</td>
+          <td>{{forname}}</td>
+          <td>{{age}}</td>
+          <td>{{city}}</td>
+          <td>{{postalcode}}</td>
+          <td><a class="fa fa-address-book" href="javascript:MUSICBAND.users.viewProfile({{id}})"></a></td>
+        </tr>
+      </table>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+<script>
+</script>
+</body>
+</html>
