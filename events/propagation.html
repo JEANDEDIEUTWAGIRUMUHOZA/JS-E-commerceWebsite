@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8"></meta>
+    <script src="propagation.js"></script>
+    <link rel="stylesheet" href="stylesheets/propagation.css" ></link>
+
+  </head>
+  <body>
+    <a href="https://www.sitepoint.com/event-bubbling-javascript/">Event propagation</a>
+    <div id="b0" class="box">
+        <div id="b1"  class="box">
+            <div id="b2" class="box">
+                <div id="b3" class="box">
+                    <div id="b4" class="box inner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="empty">
+        <thead>
+            <tr>
+                <th>target</th>
+                <th>phase</th>
+                <th>currentTarget</th>
+                <th>this</th>
+                <th>listener</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="5">Click on the boxes!</td>
+            </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
